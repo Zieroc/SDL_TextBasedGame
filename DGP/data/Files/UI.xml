@@ -1,0 +1,30 @@
+<UI>
+	<SSX>20</SSX>
+	<SSY>300</SSY>
+	<SIX>10</SIX>
+	<SIY>10</SIY>
+	<SCX>70</SCX>
+	<SCY>470</SCY>
+	<SCI>50</SCI>
+	<Button>
+		<X>20</X>
+		<Y>470</Y>
+		<Image>Button1.png</Image>
+		<Hover>Button1Hover.png</Hover>
+		<Choice>1</Choice>
+	</Button>
+	<Button>
+		<X>20</X>
+		<Y>520</Y>
+		<Image>Button2.png</Image>
+		<Hover>Button2Hover.png</Hover>
+		<Choice>2</Choice>
+	</Button>
+	<Button>
+		<X>20</X>
+		<Y>570</Y>
+		<Image>Button3.png</Image>
+		<Hover>Button3Hover.png</Hover>
+		<Choice>3</Choice>
+	</Button>
+</UI>

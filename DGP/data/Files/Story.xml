@@ -1,0 +1,132 @@
+<Story>
+	<StoryScene>
+		<ID>0</ID>
+        <SceneText>Welcome to The Hitchhiker's Adventure.</SceneText>
+		<Image>Title.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>1</Transition>
+			<ChoiceText>Begin your adventure!</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+    <StoryScene>
+		<ID>1</ID>
+        <SceneText>For reasons both unknown and unimportant you have found yourself stranded in space. Luckily a  ship happens to be passing by and stops to offer you a lift.</SceneText>
+		<Image>Image1.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>2</Transition>
+			<ChoiceText>Accept the lift</ChoiceText>
+		</SceneChoice>
+        <SceneChoice>
+			<ID>2</ID>
+			<Transition>3</Transition>
+			<ChoiceText>Decline the lift</ChoiceText>
+		</SceneChoice>
+		<SceneChoice>
+			<ID>3</ID>
+			<Transition>4</Transition>
+			<ChoiceText>Wait! How did I end up stranded in space?</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+	<StoryScene>
+		<ID>2</ID>
+        <SceneText>You board the ship and head out into the galaxy. The ships is piloted by some Martians. They are heading home but offer to drop you at earth if you want to go home too.</SceneText>
+		<Image>Image2.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>6</Transition>
+			<ChoiceText>Head To Earth</ChoiceText>
+		</SceneChoice>
+		<SceneChoice>
+			<ID>2</ID>
+			<Transition>7</Transition>
+			<ChoiceText>Head To Mars</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+	<StoryScene>
+		<ID>3</ID>
+        <SceneText>After some time another ship happens to pass by. How incredibly lucky you have been to have found two ships will stranded in space. This ship also offers you a lift.</SceneText>
+		<Image>Image1.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>2</Transition>
+			<ChoiceText>Accept a lift from this ship</ChoiceText>
+		</SceneChoice>
+		<SceneChoice>
+			<ID>2</ID>
+			<Transition>5</Transition>
+			<ChoiceText>Decline the lift</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+	<StoryScene>
+		<ID>4</ID>
+        <SceneText>I already told that it was due to reasons both unknown and unimportant. You are stranded in space thats what matters. Now this ship isn't going to wait for you forever you know!</SceneText>
+		<Image>Image1.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>2</Transition>
+			<ChoiceText>Accept the lift</ChoiceText>
+		</SceneChoice>
+        <SceneChoice>
+			<ID>2</ID>
+			<Transition>3</Transition>
+			<ChoiceText>Decline the lift</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+	<StoryScene>
+		<ID>5</ID>
+        <SceneText>It seems you can't get lucky three times in a row. No other ships pass by and you spend the rest of your days stranded in space. At least the view is nice.</SceneText>
+		<Image>Title.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>1</Transition>
+			<ChoiceText>Start Over</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+	<StoryScene>
+		<ID>6</ID>
+        <SceneText>You soon arrive back at earth and thank the martians for the lift. They beam you down right outside your house. Being stranded in space was enough excitment I guess as you decide to just go home and relax.</SceneText>
+		<Image>Image3.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>1</Transition>
+			<ChoiceText>Start Over</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+	<StoryScene>
+		<ID>7</ID>
+        <SceneText>You can see Mars coming into view in the distance. While exploring the ship you found an escape pod. If you are having any second thoughts now is your chance to act on them.</SceneText>
+		<Image>Image4.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>8</Transition>
+			<ChoiceText>Onwards To Mars!</ChoiceText>
+		</SceneChoice>
+		<SceneChoice>
+			<ID>2</ID>
+			<Transition>9</Transition>
+			<ChoiceText>To the escape pod!</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+	<StoryScene>
+		<ID>8</ID>
+        <SceneText>You arrive on Mars. It is rather red. The martians said that humans were forbidden in there city and so dropped you in the middle of nowhere. Well at least you made it to another planet.</SceneText>
+		<Image>Image6.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>1</Transition>
+			<ChoiceText>Start Over</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+	<StoryScene>
+		<ID>9</ID>
+        <SceneText>You board the escape pod and launch yourself out of the ship. Unfortunately the pod seems to have little fuel and soon you are stuck floating through space. Stranded again but at least you have a pod this time!</SceneText>
+		<Image>Image5.png</Image>
+        <SceneChoice>
+			<ID>1</ID>
+			<Transition>1</Transition>
+			<ChoiceText>Start Over</ChoiceText>
+		</SceneChoice>
+    </StoryScene>
+</Story>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6132F161-0C09-4F39-95EE-65CB5070E1CA}</ProjectGuid>
+    <RootNamespace>DGP</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\SDL2_mixer-2.0.0\include;$(SolutionDir)\SDL2_image-2.0.0\include;$(SolutionDir)\SDL2-2.0.0\include;$(SolutionDir)\SDL2_ttf-2.0.12\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(SolutionDir)\SDL2_mixer-2.0.0\lib\x86;$(SolutionDir)\SDL2_image-2.0.0\lib\x86;$(SolutionDir)\SDL2_ttf-2.0.12\lib\x86;$(SolutionDir)\SDL2-2.0.0\lib\x86;$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\SDL2_mixer-2.0.0\lib\x86;$(SolutionDir)\SDL2_image-2.0.0\lib\x86;$(SolutionDir)\SDL2_ttf-2.0.12\lib\x86;$(SolutionDir)\SDL2-2.0.0\lib\x86;$(LibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CC_Texture.cpp" />
+    <ClCompile Include="ChoiceButton.cpp" />
+    <ClCompile Include="ContentManager.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GamePlayScreen.cpp" />
+    <ClCompile Include="GameScreen.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SceneChoice.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="StoryDAO.cpp" />
+    <ClCompile Include="StoryManager.cpp" />
+    <ClCompile Include="StoryScene.cpp" />
+    <ClCompile Include="TextSprite.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="UIDAO.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CC_Texture.h" />
+    <ClInclude Include="ChoiceButton.h" />
+    <ClInclude Include="ContentManager.h" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GamePlayScreen.h" />
+    <ClInclude Include="GameScreen.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="StoryDAO.h" />
+    <ClInclude Include="StoryManager.h" />
+    <ClInclude Include="StoryScene.h" />
+    <ClInclude Include="SceneChoice.h" />
+    <ClInclude Include="ScreenManager.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="TextSprite.h" />
+    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="UIDAO.h" />
+    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="Vector2.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
